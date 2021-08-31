@@ -1,0 +1,17 @@
+﻿<Window x:Class="CountryDropdown.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CountryDropdown"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Loaded="StackPanel_Loaded">
+        <ComboBox  Name="cmbContinent" Width="200" SelectionChanged="cmbContinent_SelectionChanged"/>
+        <ComboBox  Name="cmbCountry" Width="200" SelectionChanged="cmbCountry_SelectionChanged"/>
+        <Label Content="" Name="lblCapital"/>
+        <Image Name="Img1" Width="60" Height="50"/>
+        <ComboBox  Name="cmbState" Width="200" SelectionChanged="cmbState_SelectionChanged"/>
+        <Label Content="" Name="lblState"/>
+    </StackPanel>
+</Window>
